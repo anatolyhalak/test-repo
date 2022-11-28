@@ -6,7 +6,7 @@ public class Fractional {
     }
     public static double fraction(double x){
         int res = (int)x;
-        double result = x - res;
+        float result = (float) (x - res);
         return result;
     }
 }
