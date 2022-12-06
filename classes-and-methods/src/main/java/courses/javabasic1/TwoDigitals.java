@@ -1,4 +1,4 @@
-package courses;
+package courses.javabasic1;
 
 public class TwoDigitals {
     public static void main(String[] args) {

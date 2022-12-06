@@ -1,4 +1,4 @@
-package courses;
+package courses.javabasic1;
 
 public class Positive {
     public static void main(String[] args) {

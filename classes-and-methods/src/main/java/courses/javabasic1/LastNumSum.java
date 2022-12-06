@@ -1,4 +1,4 @@
-package courses;
+package courses.javabasic1;
 
 public class LastNumSum {
     //задание#10
