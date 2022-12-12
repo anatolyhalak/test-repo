@@ -4,19 +4,105 @@ import java.util.Arrays;
 
 public class ModuleMassive {
     public static void main(String[] args) {
-        int[] arr = {12,-4,-7,4,5,-7,-2,1};
-        for ( int i = 0; i < arr.length; i++) {
-            System.out.print(arr[i] + " ");
+        int[] arr = {1,2,-3,4,-2,2,-5};
+        //for ( int i = 0; i < arr.length; i++) {
+        //    System.out.print(arr[i] + " ");
+        //}
+        //int[] arr2 = reverseBack(arr);
+       //     System.out.println("");
+        //for ( int i = 0; i < arr2.length; i++) {
+        //    System.out.print(arr2[i] + " ");
+       // }
+        deleteNegative(arr);
+        //System.out.println(deleteNegative());
+    }
+    //Массивы#12
+    public static int[] add(int[] arr, int[] ins, int pos) {
+        int[] arrRes = new int[arr.length + ins.length];
+        boolean flag = true;
+        for (int i = 0; i < arrRes.length; i++) {
+            if (flag == true) {
+                if (i != pos) {
+                    arrRes[i] = arr[i];
+                } else {
+                    for (int j = 0; j < ins.length; j++) {
+                        arrRes[pos + j] = ins[j];
+                    }
+                    flag = false;
+                    i += ins.length - 1;
+                }
+            } else {
+                arrRes[i] = arr[i - ins.length];
+            }
         }
-        int[] arr2 = reverseBack(arr);
-            System.out.println("");
-        for ( int i = 0; i < arr2.length; i++) {
-            System.out.print(arr2[i] + " ");
+        return arrRes;
+    }
+    //Массивы#11
+    public static int[] add(int[] arr, int x, int pos){
+        int[] arrRes = new int[arr.length + 1];
+        boolean flag = true;
+        for( int i = 0; i < arrRes.length; i++){
+            if ( flag == true){
+                if( i != pos){
+                    arrRes[i] = arr[i];
+                }
+                else {
+                    arrRes[i] = x;
+                    flag = false;
+                }
+            }
+            else{
+                arrRes[i] = arr[i - 1];
+            }
         }
+        return arrRes;
+    }
+    //Массивы#10
+    public static int[] deleteNegative(int[] arr) {
+        int count = 0;
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] > 0) {
+                count++;
+            }
+        }
+        int[] arrRes = new int[count];
+        int index = 0;
+        for(int i = 0; i < arr.length; i++) {
+            if (arr[i] > 0) {
+                arrRes[index] = arr[i];
+                index++;
+            }
+        }
+        return arrRes;
+    }
+    //Массивы#9
+    public static int[] findAll(int[] arr, int x){
+        int count = 0;
+        for(int i = 0; i < arr.length; i++) {
+            if (arr[i] == x) {
+                count++;
+            }
+        }
+        int[] arrRes = new int[count];
+        int index = 0;
+        for(int i = 0; i < arr.length; i++) {
+            if (arr[i] == x) {
+                arrRes[index] = i;
+                index++;
+            }
+        }
+        return arrRes;
     }
     //Массивы#8
     public static int[] concat(int[] arr1, int[] arr2) {
-
+        int[] arrConsat = new int[arr1.length+arr2.length];
+        for(int i = 0; i < arr1.length; i++){
+            arrConsat[i] = arr1[i];
+        }
+        for (int i = 0; i < arr2.length; i++){
+            arrConsat[arr1.length + i] = arr2[i];
+        }
+        return arrConsat;
     }
     //Массивы#7
     public static int[] reverseBack(int[] arr) {
