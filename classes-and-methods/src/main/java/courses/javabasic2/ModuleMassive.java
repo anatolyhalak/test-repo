@@ -4,17 +4,24 @@ import java.util.Arrays;
 
 public class ModuleMassive {
     public static void main(String[] args) {
-        int[] arr = {1,2,-3,4,-2,2,-5};
-        //for ( int i = 0; i < arr.length; i++) {
-        //    System.out.print(arr[i] + " ");
-        //}
+        int[] arr = {1,2,-3,4, 0,-2,2,-5};
+        for ( int i = 0; i < arr.length; i++) {
+           System.out.print(arr[i] + " ");
+        }
+        System.out.println();
+        int[] arr2 = deleteNegative(arr);
+        for ( int i = 0; i < arr2.length; i++) {
+            System.out.print(arr2[i] + " ");
+        }
+        System.out.println();
+        System.out.print(arr[0] + " ");
         //int[] arr2 = reverseBack(arr);
-       //     System.out.println("");
+        //    System.out.println("");
         //for ( int i = 0; i < arr2.length; i++) {
         //    System.out.print(arr2[i] + " ");
-       // }
-        deleteNegative(arr);
-        //System.out.println(deleteNegative());
+        //}
+        //System.out.println(deleteNegative(arr));
+        //deleteNegative(arr);
     }
     //Массивы#12
     public static int[] add(int[] arr, int[] ins, int pos) {
@@ -61,14 +68,14 @@ public class ModuleMassive {
     public static int[] deleteNegative(int[] arr) {
         int count = 0;
         for (int i = 0; i < arr.length; i++) {
-            if (arr[i] > 0) {
+            if (arr[i] >= 0) {
                 count++;
             }
         }
         int[] arrRes = new int[count];
         int index = 0;
         for(int i = 0; i < arr.length; i++) {
-            if (arr[i] > 0) {
+            if (arr[i] >= 0) {
                 arrRes[index] = arr[i];
                 index++;
             }
