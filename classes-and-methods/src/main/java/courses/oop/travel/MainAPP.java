@@ -1,4 +1,4 @@
-package courses.oop.leetcode;
+package courses.oop.travel;
 
 public class MainAPP {
     public static void main(String[] args) {

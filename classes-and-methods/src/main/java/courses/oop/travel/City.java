@@ -1,4 +1,4 @@
-package courses.oop.leetcode;
+package courses.oop.travel;
 
 import java.util.HashSet;
 import java.util.Iterator;

@@ -1,4 +1,4 @@
-package courses.oop.leetcode;
+package courses.oop.travel;
 
 public class Road {
     City town;
