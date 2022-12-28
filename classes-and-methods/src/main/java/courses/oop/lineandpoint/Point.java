@@ -1,4 +1,4 @@
-package courses.oop;
+package courses.oop.lineandpoint;
 
 import java.util.Objects;
 

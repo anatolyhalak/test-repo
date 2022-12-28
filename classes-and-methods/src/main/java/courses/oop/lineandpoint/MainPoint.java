@@ -1,4 +1,4 @@
-package courses.oop;
+package courses.oop.lineandpoint;
 
 public class MainPoint {
     public static void main(String[] args) {

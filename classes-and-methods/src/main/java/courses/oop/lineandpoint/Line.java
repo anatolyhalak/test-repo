@@ -1,25 +1,31 @@
-package courses.oop;
+package courses.oop.lineandpoint;
+
 
 public class Line {
-    int x;
-    int y;
+    Point first;
+    Point second;
 
     public Line() {
 
     }
-    public Line(int x, int y) {
-        this.x = x;
-        this.y = y;
+    public Line(Point x, Point y) {
+       this.first = x;
+       this.second = y;
+    }
+
+    public Line(int x1, int y1, int x2, int y2) {
+        this.first = new Point(x1,y1);
+        this.second = new Point(x2, y2);
     }
 
     @Override
     public String toString() {
-        return "{" + x + ";" + y + "}";
+        return "Линия от " + first + " до " + second;
+    }
+    public double Length() {
+        return Math.sqrt( Math.pow ((this.first.x - this.second.x), 2) + Math.pow ((this.first.y - this.second.y), 2));
     }
 
-    public double distance(Line p1) {
-        return Math.sqrt((this.x - p1.x) * (this.x - p1.x) + (this.y - p1.y) * (this.y - p1.y));
-    }
 }
 
 //ЗАДАЧА
