@@ -1,4 +1,4 @@
-package courses.oop.lineandpoint;
+package courses.oop.objAndClasses.lineandpoint;
 
 //#2.Линия
 public class MainLine {

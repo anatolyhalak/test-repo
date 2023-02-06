@@ -1,6 +1,4 @@
-package courses.oop.lineandpoint;
-
-import java.util.Objects;
+package courses.oop.objAndClasses.lineandpoint;
 
 public class Point {
     int x;

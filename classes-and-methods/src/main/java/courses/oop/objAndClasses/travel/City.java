@@ -1,4 +1,4 @@
-package courses.oop.travel;
+package courses.oop.objAndClasses.travel;
 
 import java.util.HashSet;
 import java.util.Iterator;

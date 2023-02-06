@@ -1,4 +1,4 @@
-package courses.oop.travel;
+package courses.oop.objAndClasses.travel;
 
 public class MainAPP {
     public static void main(String[] args) {

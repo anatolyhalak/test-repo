@@ -1,4 +1,4 @@
-package courses.oop.travel;
+package courses.oop.objAndClasses.travel;
 
 public class Road {
     City town;
