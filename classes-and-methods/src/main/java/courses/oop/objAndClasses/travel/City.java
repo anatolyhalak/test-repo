@@ -18,24 +18,23 @@ public class City {
     }
 
 
-    public void addRoad(Road road){
+    public void addRoad(Road road) {
         this.roads.add(road);
     }
 
-    public void addRoad(City city, int cost){
+    public void addRoad(City city, int cost) {
         Road road = new Road(city, cost);
         this.roads.add(road);
     }
 
-    public City travel(int n){
+    public City travel(int n) {
         City now = this;
-        for(int i = 0; i <=n; i++){
+        for (int i = 0; i <= n; i++) {
             Iterator<Road> iterator = now.roads.iterator();
-            if(iterator.hasNext()){
+            if (iterator.hasNext()) {
                 Road r = iterator.next();
                 now = r.town;
-            }
-            else return null;
+            } else return null;
         }
         return now;
     }
@@ -46,8 +45,8 @@ public class City {
         str.append("Название города: " + name + "\n");
         str.append("Список связанных с ним городов: " + "\n");
         for (Road road : roads) {
-            str.append(road.town.name +": "+ road.cost + "\n");
+            str.append(road.town.name + ": " + road.cost + "\n");
         }
-           return str.toString();
+        return str.toString();
     }
 }

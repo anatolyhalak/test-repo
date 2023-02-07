@@ -34,15 +34,13 @@ public class MainAPP {
         d.addRoad(dRoadE);
         d.addRoad(dRoadA);
 //        создание маршрутов города E и добавление их в город.
-        Road eRoadF = new Road(f,2);
+        Road eRoadF = new Road(f, 2);
         e.addRoad(eRoadF);
 //        создание маршрутов города F и добавление их в город.
-        Road fRoadE = new Road(e,2);
-        Road fRoadB = new Road(b,1);
+        Road fRoadE = new Road(e, 2);
+        Road fRoadB = new Road(b, 1);
         f.addRoad(fRoadE);
         f.addRoad(fRoadB);
-
-
 
 
         System.out.println(a);
@@ -50,13 +48,7 @@ public class MainAPP {
         System.out.println(b.travel(1));
 
 
-
-
-
-
-
-        }
-
+    }
 
 
 }

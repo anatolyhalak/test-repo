@@ -7,7 +7,7 @@ import java.util.List;
 
 public class MainApp {
     public static void main(String[] args) {
-    Student student = new Student("ivan", new ArrayList<>(Arrays.asList(3,4,5,4,5)));
+        Student student = new Student("ivan", new ArrayList<>(Arrays.asList(3, 4, 5, 4, 5)));
         System.out.println(student);
         student.addScore(5);
         System.out.println(student);

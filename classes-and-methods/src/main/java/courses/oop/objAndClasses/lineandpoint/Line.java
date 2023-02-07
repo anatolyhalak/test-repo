@@ -8,13 +8,14 @@ public class Line {
     public Line() {
 
     }
+
     public Line(Point x, Point y) {
-       this.first = x;
-       this.second = y;
+        this.first = x;
+        this.second = y;
     }
 
     public Line(int x1, int y1, int x2, int y2) {
-        this.first = new Point(x1,y1);
+        this.first = new Point(x1, y1);
         this.second = new Point(x2, y2);
     }
 
@@ -22,8 +23,9 @@ public class Line {
     public String toString() {
         return "Линия от " + first + " до " + second;
     }
+
     public double Length() {
-        return Math.sqrt( Math.pow ((this.first.x - this.second.x), 2) + Math.pow ((this.first.y - this.second.y), 2));
+        return Math.sqrt(Math.pow((this.first.x - this.second.x), 2) + Math.pow((this.first.y - this.second.y), 2));
     }
 
 }

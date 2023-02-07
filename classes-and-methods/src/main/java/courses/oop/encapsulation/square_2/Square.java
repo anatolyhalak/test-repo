@@ -4,12 +4,11 @@ public class Square {
     private Point leftUpPoint;
     private int lineLength;
 
-    Square(int x, int y, int lineLength){
-        this.leftUpPoint = new Point(x,y);
-        if (lineLength>0) {
+    Square(int x, int y, int lineLength) {
+        this.leftUpPoint = new Point(x, y);
+        if (lineLength > 0) {
             this.lineLength = lineLength;
-        }
-        else {
+        } else {
             throw new IllegalArgumentException("lineLength must be positive");
         }
     }
@@ -26,25 +25,24 @@ public class Square {
         this.leftUpPoint = leftUpPoint;
     }
 
-    public int getX(){
+    public int getX() {
         return this.leftUpPoint.x;
     }
 
-    public int getY(){
+    public int getY() {
         return this.leftUpPoint.y;
     }
 
     public void setLineLength(int lineLength) {
-        if (lineLength>0) {
+        if (lineLength > 0) {
             this.lineLength = lineLength;
-        }
-        else {
-           throw new IllegalArgumentException("lineLength must be positive");
+        } else {
+            throw new IllegalArgumentException("lineLength must be positive");
         }
     }
 
     @Override
-    public String toString(){
+    public String toString() {
         return "Квадрат в точке " + leftUpPoint + " со стороной " + lineLength;
     }
 }
