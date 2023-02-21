@@ -12,25 +12,32 @@ public class MainPolyline {
                 new Point(5, 3),
                 new Point(8, 9));
 
-        System.out.println(polyline);
+        System.out.println("1.Создаем ломаную: " + polyline);
 
 //        2 Рассчитать длину Ломаной11
-        System.out.println("Длина ломаной линии: " + polyline.getLinesLength());
+        System.out.println("2.Длина Ломаной линии: " + polyline.getLinesLength());
 
 //        3 Получить у Ломаной массив Линий
         Line[] mass = polyline.getLines();
+        System.out.println("3.Получаем у Ломаной массив Линий: ");
+        //for (Line line : mass)
+        for (int i = 0; i < mass.length; i++){
+            System.out.println(mass[i]);
+        }
 
 //        4 Рассчитать длину массива Линий
         double lengthMass = 0;
         for (int i = 0; i < mass.length; i++) {
             lengthMass += mass[i].length();
         }
+        System.out.println("4.Рассчитываем длину массива Линий: " + lengthMass);
+
 //        5 Сравнить длину Ломаной и массива Линий: они должны совпасть
-        System.out.println(lengthMass == polyline.getLinesLength());
+        System.out.println("5.Сравниваем длину Ломаной и массива Линий: " + (lengthMass == polyline.getLinesLength()));
 
 //        6 Сдвинуть координату Точки {2,8} таким образом, чтобы она стала иметь значение {12,8}.
 
-        System.out.println(polyline);
+        System.out.println("6.Сдвигаем координату точки: " + polyline);
 
     }
 
