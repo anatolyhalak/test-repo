@@ -18,12 +18,17 @@ public class MainPolyline {
 
 //          3 Получить у Ломаной массив Линий
         Line[] mass = polyline.getLines();
+        System.out.println("Массив линий:");
+        for (int i = 0; i < mass.length; i++) {
+            System.out.println(mass[i]);
+        }
 
 //          4 Рассчитать длину массива Линий
         double lengthMass = 0;
         for (int i = 0; i < mass.length; i++) {
             lengthMass += mass[i].length();
         }
+        System.out.println("Длина ломаной линии: " + lengthMass);
 //          5 Сравнить длину Ломаной и массива Линий: они должны совпасть
         System.out.println(lengthMass == polyline.getLinesLength());
 
