@@ -11,14 +11,14 @@ public class MainPolyline {
                 new Point(5, 3),
                 new Point(8, 9));
 
-        System.out.println(polyline);
+        System.out.println("1.Создана Ломаная, проходящая через точки: " + polyline);
 
-//          2 Рассчитать длину Ломаной11
-        System.out.println("Длина ломаной линии: " + polyline.getLinesLength());
+//          2 Рассчитать длину Ломаной
+        System.out.println("2.Длина ломаной Линий: " + polyline.getLinesLength());
 
 //          3 Получить у Ломаной массив Линий
         Line[] mass = polyline.getLines();
-        System.out.println("Массив линий:");
+        System.out.println("3.Массив Линий:");
         for (int i = 0; i < mass.length; i++) {
             System.out.println(mass[i]);
         }
@@ -28,13 +28,13 @@ public class MainPolyline {
         for (int i = 0; i < mass.length; i++) {
             lengthMass += mass[i].length();
         }
-        System.out.println("Длина ломаной линии: " + lengthMass);
+        System.out.println("4.Длина массива Линий: " + lengthMass);
 //          5 Сравнить длину Ломаной и массива Линий: они должны совпасть
-        System.out.println(lengthMass == polyline.getLinesLength());
+        System.out.println("5.Сравнил длину Ломаной и массива Линий: " + (lengthMass == polyline.getLinesLength()));
 
 //          6 Сдвинуть координату Точки {2,8} таким образом, чтобы она стала иметь значение {12,8}.
         polyline.polyline[1] = new Point(12, 8);
-        System.out.println(polyline);
+        System.out.println("6.Сдвинул координату точки, чтобы получилось следующее: " + polyline);
     }
 
 
