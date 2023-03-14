@@ -1,4 +1,6 @@
-package homework.unit_test;
+package test.java.homework.unit_test;
+
+import main.java.homework.unit_test.Student;
 
 import java.util.List;
 

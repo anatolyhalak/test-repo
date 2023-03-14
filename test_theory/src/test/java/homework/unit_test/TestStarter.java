@@ -1,4 +1,4 @@
-package homework.unit_test;
+package test.java.homework.unit_test;
 
 public class TestStarter {
     public static void main(String[] args) {
