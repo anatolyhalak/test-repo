@@ -1,8 +1,6 @@
 package ru.courses.oop.geometric;
 
 
-
-
 public class Line {
     Point first;
     Point second;
