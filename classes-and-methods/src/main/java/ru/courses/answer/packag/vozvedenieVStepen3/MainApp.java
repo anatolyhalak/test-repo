@@ -1,4 +1,4 @@
-package ru.courses.answer.vozvedenieVStepen3;
+package ru.courses.answer.packag.vozvedenieVStepen3;
 
 public class MainApp {
     public static void main(String[] args) {

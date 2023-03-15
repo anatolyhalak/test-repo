@@ -1,4 +1,4 @@
-package ru.courses.answer.simpleName_4;
+package ru.courses.answer.packag.simpleName_4;
 
 import ru.courses.oop.geometric.Point;
 
